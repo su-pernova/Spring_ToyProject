@@ -1,2 +1,2 @@
 # Spring_ToyProject
-Spring Framework를 이용한 Toy Project : 회원관리
+Spring Framework를 이용한 Toy Project : 방명록
