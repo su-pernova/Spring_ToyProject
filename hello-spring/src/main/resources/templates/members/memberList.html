@@ -1,0 +1,32 @@
+<!--이 파일에선 thymeleaf 템플릿 엔진이 본격적으로 작동한다.-->
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+    <div> <table>
+
+            <thead>
+            <tr>
+                <th>#</th>
+                <th>방명록</th>
+            </tr>
+            </thead>
+
+            <!--템플릿 언어가 렌더링 하는 부분-->
+            <!--${값} : 모델 안에 있는 값을 꺼내는 것-->
+            <!--th:each : 루프를 돌리는 역할(thymeleaf 문법)-->
+            <!--${값} : 모델 안에 있는 값을 꺼내는 것-->
+            <tbody>
+            <tr th:each="member : ${members}">
+                <!--<td th:text="${member.id}"></td> $getid Getter로 접근할 수 있다.-->
+                <th>♡</th>
+                <td th:text="${member.name}"></td> <!--$setid Setter로 접근할 수 있다.-->
+            </tr>
+            </tbody>
+
+    </table> </div>
+</div> <!-- /container -->
+
+</body>
+</html>

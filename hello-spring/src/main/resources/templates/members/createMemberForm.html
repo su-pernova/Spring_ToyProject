@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<div class="container">
+    <!--form 태그 : 값을 입력할 수 있는 html 태그-->
+    <!--submit 버튼을 누르면 작성한 정보가 action url 에게 post 방식으로 전달된다.-->
+    <!--post 방식으로 전달된 것은 MemberController의 @PostMapping 부분에서 처리-->
+    <form action="/members/new" method="post">
+        <div class="form-group">
+        <label for="name">이름</label>
+        <!--name="name"이 서버로 넘어올 때 key가 된다.-->
+        <!--input 태그 : 값을 입력할 수 있는 박스 생성-->
+        <input type="text" id="name" name="name" placeholder="이름을 입력하세요">
+        <button type="submit">등록</button>
+        </div>
+
+    </form>
+</div> <!--/container-->
+
+</body>
+</html>
